@@ -7,6 +7,6 @@ config(['$locationProvider', '$routeProvider',
         when('/home', {
             template: '<restaurant-ui></restaurant-ui>'
         }).
-        otherwise('/#!/home');
+        otherwise('/home');
     }
 ]);
