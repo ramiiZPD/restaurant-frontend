@@ -1,0 +1,159 @@
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">Navbar</a>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link" href="/home">Home</a>
+            <a class="nav-item nav-link disabled" href="/home">About</a>
+            <a class="nav-item nav-link disabled" href="/home">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<div class="jumbotron text-center">
+    <h1>Home Page</h1>
+</div>
+
+<div class="sectionLight">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="row text-center">
+                <div class="col-sm-12 col-lg-6">
+                    <img class="card-img-top" src="../images/food_image_4.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">ORDER ONLINE</h4>
+                        <p class="card-text">Some quick example text</p>
+                        <a class="btn btn-outline-success" data-toggle="modal" data-target="#orderOnline">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-6 float-right">
+                    <img class="card-img-top" src="../images/food_image_5.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">MAKE A RESERVATION</h4>
+                        <p class="card-text">Some quick example text</p>
+                        <a class="btn btn-outline-success" data-toggle="modal" data-target="#makeReservation">Book Now!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="makeReservation" tabindex="-1" role="dialog" aria-labelledby="coolStuffLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="contentLabel">Make a reservation</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="modalFormWrapper">
+                                <form>
+                                    <div class="form-group row">
+                                        <label class="col-5 col-form-label">Mobile number</label>
+                                        <div class="input-group col-7">
+                                            <div class="input-group-addon">+94</div>
+                                            <input type="text" class="form-control" id="formGroupExampleInput1" >
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-5 col-form-label">User ID</label>
+                                        <div class="col-7">
+                                            <input class="form-control" type="text" id="formGroupExampleInput2">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-5 col-form-label">Number of guests</label>
+                                        <div class="col-7">
+                                            <input class="form-control" type="number" id="formGroupExampleInput3">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-5 col-form-label">Arrival time</label>
+                                        <div class="col-7">
+                                            <input class="form-control" type="time" id="formGroupExampleInput4">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary float-left">Reserve</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="orderOnline" tabindex="-1" role="dialog" aria-labelledby="coolStuffLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Order Online</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="modalFormWrapper">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <img class="foodImage" src="https://www.pizzahut.lk/Images/Product/Chicken%20Bacon.png">
+                                        </div>
+                                        <div class="col-4">
+                                            <img class="foodImage" src="https://www.pizzahut.lk/Images/Product/Cheese%20Lovers_.png">
+                                        </div>
+                                        <div class="col-4">
+                                            <p>hi</p>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-5 col-form-label">Mobile number</label>
+                                        <div class="input-group col-7">
+                                            <div class="input-group-addon">+94</div>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-5 col-form-label">User ID</label>
+                                        <div class="col-7">
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-5 col-form-label">Number of guests</label>
+                                        <div class="col-7">
+                                            <input class="form-control" type="number">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-5 col-form-label">Arrival time</label>
+                                        <div class="col-7">
+                                            <input class="form-control" type="time">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary float-left">Reserve</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,46 @@
+body {
+  background: #eee;
+}
+
+footer {
+  background-color: #383838 !important;
+}
+
+.signin-card-align {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.signin-card {
+  max-width: 380px;
+  padding: 15px 35px 45px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+.signin-icon {
+  margin-left: 20px;
+}
+
+.card-responsive {
+  margin-left: 60px;
+}
+
+.sectionLight{
+  background-color: #eceeef;
+  padding: 2em;
+}
+
+.modalFormWrapper{
+  padding: 2rem;
+}
+
+img {
+  max-width: 150px !important;
+  max-height: 150px !important;
+}
+
+.btn-text {
+  border-color: #0275d8;
+}
