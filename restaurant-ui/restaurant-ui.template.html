@@ -56,28 +56,40 @@
                             <div class="modalFormWrapper">
                                 <form>
                                     <div class="form-group row">
+                                        <label class="col-5 col-form-label">Reservation ID</label>
+                                        <div class="col-7">
+                                            <input class="form-control" type="text" ng-model="$ctrl.reservationID">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
                                         <label class="col-5 col-form-label">Mobile number</label>
                                         <div class="input-group col-7">
                                             <div class="input-group-addon">+94</div>
-                                            <input type="text" class="form-control" id="formGroupExampleInput1" >
+                                            <input type="text" class="form-control" id="formGroupExampleInput1" ng-model="$ctrl.mobileNumber">
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-5 col-form-label">User ID</label>
                                         <div class="col-7">
-                                            <input class="form-control" type="text" id="formGroupExampleInput2">
+                                            <input class="form-control" type="text" ng-model="$ctrl.userID">
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-5 col-form-label">Number of guests</label>
                                         <div class="col-7">
-                                            <input class="form-control" type="number" id="formGroupExampleInput3">
+                                            <input class="form-control" type="number" ng-model="$ctrl.noGuests">
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-5 col-form-label">Arrival time</label>
                                         <div class="col-7">
-                                            <input class="form-control" type="time" id="formGroupExampleInput4">
+                                            <input class="form-control" type="time" ng-model="$ctrl.arivalTime">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-5 col-form-label">Email</label>
+                                        <div class="col-7">
+                                            <input class="form-control" type="text" ng-model="$ctrl.email">
                                         </div>
                                     </div>
                                 </form>
@@ -88,7 +100,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary float-left">Reserve</button>
+                <button type="button" class="btn btn-primary float-left" ng-click="$ctrl.makeNewReservation()">Reserve</button>
             </div>
         </div>
     </div>
